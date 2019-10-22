@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/searchview">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginLeft="-28dp"
+        android:layout_marginTop="181dp"
+        android:colorControlActivated="#FFFFE4B4"
+        android:colorControlNormal="#FFFFE4C4"
+        android:ems="10"
+        android:hint="주소를 입력하세요."
+        android:textColorHighlight="#FFFFE4C4"
+        android:textColorLink="#FFFFE4C4">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="249dp"
+        android:layout_marginRight="136dp"
+        android:layout_marginBottom="490dp"
+        android:background="@drawable/searchbutton2"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="28dp"
+        android:text="조회한 주소정보 출력"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+</RelativeLayout>

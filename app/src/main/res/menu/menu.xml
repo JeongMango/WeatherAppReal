@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <!-- 액션버튼  -->
+
+    <item android:id="@+id/action_bt2"
+        android:title="성별 바꾸기"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_bt3"
+        android:title="위치 변경하기"
+        app:showAsAction="never" />
+</menu>

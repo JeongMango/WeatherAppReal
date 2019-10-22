@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="dev.edmt.weatherapp.MainActivity"
+    android:background="@drawable/mainbackground">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <!--
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="직접넣기"
+            android:layout_gravity="right"
+            />
+         -->
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/txtLastUpdate"
+        android:layout_width="343dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCity"
+        android:layout_width="130dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="68dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="129dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="68dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDescription2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textColor="#FFFFE4C4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtHumidity"
+        android:layout_width="96dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="144dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="28dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/transparent"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="176dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtTime" />
+
+    <TextView
+        android:id="@+id/txtCelsius"
+        android:layout_width="214dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="296dp"
+        android:layout_marginTop="68dp"
+        android:gravity=""
+        android:text=""
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="82dp"
+        android:layout_height="66dp"
+        android:layout_gravity=""
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cloth"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="360dp"
+        android:background="@drawable/cloth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/windowbt"
+        android:layout_width="175dp"
+        android:layout_height="204dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="200dp"
+        android:background="#00ff0000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif"
+        android:layout_width="164dp"
+        android:layout_height="292dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="156dp"
+        android:src="@drawable/gif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/dogtalk"
+        android:layout_width="169dp"
+        android:layout_height="117dp"
+        android:layout_gravity=""
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="140dp"
+        android:background="#00ff0000"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

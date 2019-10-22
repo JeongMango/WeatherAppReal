@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/trans_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    >
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="130dp"
+        android:layout_height="81dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="218dp"
+        android:layout_marginEnd="24dp"
+        android:text="창문을 눌러자세한 날씨를 확인해보세요!"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="97dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="392dp"
+        android:layout_marginEnd="295dp"
+        android:text="↑ 현재 날씨에 맞는 옷차림을 확인해보세요!" />
+
+    <Button
+        android:id="@+id/trclose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="157dp"
+        android:background="@drawable/okbutton" />
+
+</RelativeLayout>

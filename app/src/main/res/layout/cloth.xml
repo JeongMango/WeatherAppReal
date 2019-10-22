@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wardrobe">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/top1"
+        android:layout_width="182dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="156dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/male"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:id="@+id/top2"
+        android:layout_width="180dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="156dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/male" />
+
+    <ImageView
+        android:id="@+id/bottom1"
+        android:layout_width="175dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="364dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/male" />
+
+    <ImageView
+        android:id="@+id/bottom2"
+        android:layout_width="170dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="364dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/male" />
+
+</android.support.constraint.ConstraintLayout>
